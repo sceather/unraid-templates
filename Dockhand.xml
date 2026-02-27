@@ -50,6 +50,6 @@
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="Data Volume" Target="/app/data" Default="/mnt/user/appdata/dockhand" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dockhand</Config>
-  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="postgres://user:password@host:5432/dbname" Mode="" Description="PostgreSQL connection URL. When unset, SQLite is used. Format: postgres://user:password@host:5432/dbname" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="PostgreSQL connection URL. When unset, SQLite is used. Format: postgres://user:password@host:5432/dbname" Type="Variable" Display="always" Required="false" Mask="false"/>
   <TailscaleStateDir/>
 </Container>
