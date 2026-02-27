@@ -42,10 +42,6 @@
   <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/src/images/logo.webp</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1772233215</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
