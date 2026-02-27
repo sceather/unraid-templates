@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Finsys/dockhand/issues</Support>
   <Project>https://dockhand.pro</Project>
-  <Overview>Dockhand is a modern Docker management for everyone.&#xD;
+  <Overview>testDockhand is a modern Docker management for everyone.&#xD;
     &#xD;
     A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise.&#xD;
     SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#xD;
