@@ -10,8 +10,8 @@
   <Project>https://dockhand.pro</Project>
   <Overview>Dockhand is a modern, efficient Docker management application providing real-time container management, Compose stack orchestration, and multi-environment support. All in a lightweight, secure and privacy-focused package.&#xD;
     SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#xD;
+    &#xD;
     Features&#xD;
-&#xD;
     - Container Management: Start, stop, restart, and monitor containers in real-time&#xD;
     - Compose Stacks: Visual editor for Docker Compose deployments&#xD;
     - Git Integration: Deploy stacks from Git repositories with webhooks and auto-sync&#xD;
@@ -19,15 +19,14 @@
     - Terminal and Logs: Interactive shell access and real-time log streaming&#xD;
     - File Browser: Browse, upload, and download files from containers&#xD;
     - Authentication: SSO via OIDC, local users, and optional RBAC (Enterprise)&#xD;
-    Tech Stack&#xD;
-&#xD;    
+    &#xD;
+    Tech Stack&#xD;   
     - Base: own OS layer built from scratch using Wolfi packages via apko. Every package is explicitly declared in the Dockerfile.&#xD;
     - Frontend: SvelteKit 2, Svelte 5, shadcn-svelte, TailwindCSS&#xD;
     - Backend: Bun runtime with SvelteKit API routes&#xD;
     - Database: SQLite or PostgreSQL via Drizzle ORM&#xD;
     - Docker: direct docker API calls.&#xD; 
     Links&#xD;
-&#xD; 
     - Website: https://dockhand.pro&#xD;
     - Documentation: https://dockhand.pro/manual&#xD;
     - Project: https://github.com/Finsys/dockhand&#xD;
