@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Finsys/dockhand/issues</Support>
   <Project>https://dockhand.pro</Project>
-  <Overview>Modern Docker management for everyone.&#xD;
+  <Overview>Dockhand is a modern Docker management for everyone.&#xD;
     &#xD;
     A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise.&#xD;
     SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#xD;
@@ -21,18 +21,20 @@
     - Terminal and Logs&#xD;
     - File Browser&#xD;
     - Authentication: SSO via OIDC, local users, and optional RBAC (Enterprise)&#xD;
+    &#xD;
     Tech Stack&#xD;   
     - Base: own OS layer built from scratch using Wolfi packages via apko. Every package is explicitly declared in the Dockerfile.&#xD;
     - Frontend: SvelteKit 2, Svelte 5, shadcn-svelte, TailwindCSS&#xD;
     - Backend: Bun runtime with SvelteKit API routes&#xD;
     - Database: SQLite or PostgreSQL via Drizzle ORM&#xD;
-    - Docker: direct docker API calls.&#xD; 
+    - Docker: direct docker API calls.&#xD;
+    &#xD;
     Links&#xD;
     - Website: https://dockhand.pro&#xD;
     - Documentation: https://dockhand.pro/manual&#xD;
     - Project: https://github.com/Finsys/dockhand&#xD;
   </Overview>
-  <Category>Tools: Other: Network:Management</Category>
+  <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/src/images/logo.webp</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
