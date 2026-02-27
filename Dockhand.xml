@@ -4,44 +4,52 @@
   <Repository>fnsys/dockhand:latest</Repository>
   <Registry>https://hub.docker.com/r/fnsys/dockhand/</Registry>
   <Network>bridge</Network>
+  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/Finsys/dockhand/issues</Support>
   <Project>https://dockhand.pro</Project>
-  <Overview>Dockhand is a modern Docker management for everyone.&#xD;
-    &#xD;
-    A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise.&#xD;
-    SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#xD;
-    &#xD;
-    Features&#xD;
-    - Container Management&#xD;
-    - Compose Stacks&#xD;
-    - Git Integration&#xD;
-    - Multi-Environment&#xD;
-    - Terminal and Logs&#xD;
-    - File Browser&#xD;
-    - Authentication: SSO via OIDC, local users, and optional RBAC (Enterprise)&#xD;
-    &#xD;
-    Tech Stack   
-    - Base: own OS layer built from scratch using Wolfi packages via apko. Every package is explicitly declared in the Dockerfile.&#xD;
-    - Frontend: SvelteKit 2, Svelte 5, shadcn-svelte, TailwindCSS&#xD;
-    - Backend: Bun runtime with SvelteKit API routes&#xD;
-    - Database: SQLite or PostgreSQL via Drizzle ORM&#xD;
-    - Docker: direct docker API calls.&#xD;
-    &#xD;
-    Links&#xD;
-    - Website: https://dockhand.pro&#xD;
-    - Documentation: https://dockhand.pro/manual&#xD;
-    - Project: https://github.com/Finsys/dockhand&#xD;
+  <ReadMe/>
+  <Overview>Dockhand is a modern Docker management for everyone.&#13;
+    &#13;
+    A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise.&#13;
+    SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#13;
+    &#13;
+    Features&#13;
+    - Container Management&#13;
+    - Compose Stacks&#13;
+    - Git Integration&#13;
+    - Multi-Environment&#13;
+    - Terminal and Logs&#13;
+    - File Browser&#13;
+    - Authentication: SSO via OIDC, local users, and optional RBAC (Enterprise)&#13;
+    &#13;
+    Tech Stack   &#13;
+    - Base: own OS layer built from scratch using Wolfi packages via apko. Every package is explicitly declared in the Dockerfile.&#13;
+    - Frontend: SvelteKit 2, Svelte 5, shadcn-svelte, TailwindCSS&#13;
+    - Backend: Bun runtime with SvelteKit API routes&#13;
+    - Database: SQLite or PostgreSQL via Drizzle ORM&#13;
+    - Docker: direct docker API calls.&#13;
+    &#13;
+    Links&#13;
+    - Website: https://dockhand.pro&#13;
+    - Documentation: https://dockhand.pro/manual&#13;
+    - Project: https://github.com/Finsys/dockhand&#13;
   </Overview>
   <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/src/images/logo.webp</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
-  <Requires></Requires>
+  <CPUset/>
+  <DateInstalled>1772233215</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
   <Config Name="Data Volume" Target="/app/data" Default="/mnt/user/appdata/dockhand" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dockhand</Config>
-  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres://dockhand:G2@7EkeT3os@P2@192.168.1.223:5433/dockhand</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="postgres://user:password@host:5432/dbname" Mode="" Description="PostgreSQL connection URL. When unset, SQLite is used. Format: postgres://user:password@host:5432/dbname" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
 </Container>
