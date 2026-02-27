@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/Finsys/dockhand/issues</Support>
   <Project>https://dockhand.pro</Project>
-  <Overview>testDockhand is a modern Docker management for everyone.&#xD;
+  <Overview>Dockhand is a modern Docker management for everyone.&#xD;
     &#xD;
     A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise.&#xD;
     SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.&#xD;
@@ -22,7 +22,7 @@
     - File Browser&#xD;
     - Authentication: SSO via OIDC, local users, and optional RBAC (Enterprise)&#xD;
     &#xD;
-    Tech Stack&#xD;   
+    Tech Stack   
     - Base: own OS layer built from scratch using Wolfi packages via apko. Every package is explicitly declared in the Dockerfile.&#xD;
     - Frontend: SvelteKit 2, Svelte 5, shadcn-svelte, TailwindCSS&#xD;
     - Backend: Bun runtime with SvelteKit API routes&#xD;
