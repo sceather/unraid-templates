@@ -22,6 +22,3 @@ https://dockhand.pro/manual/#
 **[🔼 Back to top](#unraid-templates)**
 
 ----
-
-# <mark style="background:#d4b106"><font color="#0c0c0c">Use this Guide for our new Vault CMS Setup</font></mark>
-# Vault CMS + Astro Starlight + Cloudflare Pages Setup Guide V2
