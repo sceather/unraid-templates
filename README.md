@@ -20,9 +20,10 @@ A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise. 
 - Database: SQLite or PostgreSQL via Drizzle ORM
 - Docker: direct docker API calls.
 
-    #### Links  
-    - Website: https://dockhand.pro  
-    - Documentation: https://dockhand.pro/manual  
-    - Project: https://github.com/Finsys/dockhand
+
+### Links  
+- Website: https://dockhand.pro  
+- Documentation: https://dockhand.pro/manual  
+- Project: https://github.com/Finsys/dockhand
 
 ----
