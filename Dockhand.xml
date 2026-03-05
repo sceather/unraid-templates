@@ -39,7 +39,7 @@
   <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/src/images/logo.webp</Icon>
+  <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/static/logo-light.webp</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <Requires/>
