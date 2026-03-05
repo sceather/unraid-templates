@@ -24,4 +24,20 @@ https://dockhand.pro/manual/#
 ----
 
 
+## docker-compose
+
+By default, no environment variables or volume mounts are required to deploy the container:
+
+```yaml
+services:
+  selfhst-icons:
+    image: ghcr.io/selfhst/icons:latest
+    container_name: selfhst-icons
+    restart: unless-stopped
+    ports:
+      - 4050:4050
+```
+
+Additional customization can be achieved through several optional variables and volume mounts:
+
 
