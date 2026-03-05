@@ -1,6 +1,6 @@
 # Unraid Templates
 
-### Dockhand
+## Dockhand
 
 A powerful, intuitive Docker platform. Free for homelabs, ready for enterprise. SQLite by default, runs on a Raspberry Pi, zero telemetry, free forever. Self-host everything without the complexity.
 
