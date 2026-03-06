@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>dockhand</Name>
+  <Name>Dockhand</Name>
   <Repository>fnsys/dockhand:latest</Repository>
   <Registry>https://hub.docker.com/r/fnsys/dockhand/</Registry>
   <Network>bridge</Network>
