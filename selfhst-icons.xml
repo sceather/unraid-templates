@@ -25,7 +25,9 @@ https://example.com/custom/bookstack.png&#13;
 The image is configured to reference remote icon files by default. Users who prefer to host the assets locally should consider one of the following options (not covered in this documentation):&#13;
 - rsync&#13;
 - Cloning the repository to a local folder&#13;
-- External tools like git-sync</Overview>
+- External tools like git-sync
+Self-hosted guide: https://github.com/sceather/unraid-templates/wiki/selfh.st-icons  
+  </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:4050]</WebUI>
   <TemplateURL/>
