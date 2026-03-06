@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>selfhst-icons</Name>
+  <Repository>ghcr.io/selfhst/icons:latest</Repository>
+  <Registry>https://github.com/selfhst/icons/pkgs/container/icons</Registry>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/selfhst/icons/issues</Support>
+  <Project>https://github.com/selfhst/icons</Project>
+  <ReadMe/>
+  <Overview>selfh.st/icons is a collection of logos and icons for for self-hosted (and non-self-hosted) software.&#13;
+&#13;
+This is a container to reference and colorize selfh.st/icons via HEX color codes.&#13;
+&#13;
+See here for how to use the custom colored icons. https://github.com/selfhst/icons/wiki#building-links&#13;
+&#13;
+Example Usage&#13;
+https://example.com/bookstack &#13;
+https://example.com/bookstack/primary&#13;
+https://example.com/bookstack/8803fc&#13;
+https://example.com/custom/bookstack.png&#13;
+&#13;
+The image is configured to reference remote icon files by default. Users who prefer to host the assets locally should consider one of the following options (not covered in this documentation):&#13;
+- rsync&#13;
+- Cloning the repository to a local folder&#13;
+- External tools like git-sync</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:4050]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/selfhst/icons/png/selfh-st.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <Requires/>
+  <Config Name="Port 4050" Target="4050" Default="4050" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4050</Config>
+  <Config Name="ICON_SOURCE" Target="ICON_SOURCE" Default="" Mode="" Description="# Set to 'remote' to use remote assets from this repo&#13;&#10;&#13;&#10;# Set to 'local' to use local icon files (requires volume mount)" Type="Variable" Display="always" Required="false" Mask="false">remote</Config>
+  <Config Name="STANDARD_ICON_FORMAT" Target="STANDARD_ICON_FORMAT" Default="" Mode="" Description="# Specify an icon format to use when a custom color is not specified&#13;&#10;# By default, this is set to 'webp' as not all icons have SVG versions" Type="Variable" Display="always" Required="false" Mask="false">webp</Config>
+  <Config Name="PRIMARY_COLOR" Target="PRIMARY_COLOR" Default="" Mode="" Description="# Specify a primary custom icon color to easily apply or update icons in bulk&#13;&#10;# Note: See the 'Building Links' section below for how to reference the primary color in URLs" Type="Variable" Display="always" Required="false" Mask="false">0f60d9</Config>
+  <Config Name="REMOTE_URL" Target="REMOTE_URL" Default="" Mode="" Description="# Specify a remote URL to serve icons from somewhere other than this repository&#13;&#10;# Note: The URL must serve paths for /svg and the STANDARD_ICON_FORMAT below from its root" Type="Variable" Display="always" Required="false" Mask="false">https://cdn.jsdelivr.net/gh/selfhst/icons@main</Config>
+  <Config Name="Icons SVG" Target="/app/icons/svg" Default="" Mode="ro" Description="# Always required if ICON_SOURCE is 'local'" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/svg</Config>
+  <Config Name="Icons WebP" Target="/app/icons/webp" Default="" Mode="ro" Description="# Only required if ICON_SOURCE is 'local' and STANDARD_ICON_FORMAT is 'webp'" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/webp</Config>
+  <Config Name="Icons AVIF" Target="/app/icons/avif" Default="" Mode="ro" Description="# Only required if ICON_SOURCE is 'local' and STANDARD_ICON_FORMAT is 'avif'" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/avif</Config>
+  <Config Name="Icons PNG" Target="/app/icons/png" Default="" Mode="ro" Description="# Only required if ICON_SOURCE is 'local' and STANDARD_ICON_FORMAT is 'png'" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/png</Config>
+  <Config Name="Icons ICO" Target="/app/icons/ico" Default="" Mode="ro" Description="# Only required if ICON_SOURCE is 'local' and STANDARD_ICON_FORMAT is 'ico'" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/ico</Config>
+  <Config Name="Icons Custom" Target="/app/icons/custom" Default="" Mode="ro" Description="# Optional mount for custom local icons" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/selfhst-icons/custom</Config>
+  <TailscaleStateDir/>
+</Container>
