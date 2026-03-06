@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>selfhst-icons</Name>
+  <Name>selfhst/icons</Name>
   <Repository>ghcr.io/selfhst/icons:latest</Repository>
   <Registry>https://github.com/selfhst/icons/pkgs/container/icons</Registry>
   <Network>proxynet</Network>
