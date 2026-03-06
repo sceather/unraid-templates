@@ -26,6 +26,7 @@ The image is configured to reference remote icon files by default. Users who pre
 - rsync&#13;
 - Cloning the repository to a local folder&#13;
 - External tools like git-sync&#13;
+    &#13;
     A self-hosting guide can be seen here: https://github.com/sceather/unraid-templates/wiki/selfh.st-icons  
   </Overview>
   <Category>Tools:</Category>
