@@ -39,7 +39,7 @@
   <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/Finsys/dockhand/refs/heads/main/static/logo.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/sceather/unraid-templates/refs/heads/main/images/dockhand.svg</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <Requires/>
